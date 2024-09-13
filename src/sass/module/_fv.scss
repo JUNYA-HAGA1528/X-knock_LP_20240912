@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.fv{
+    text-align: center;
+}
+
+.fv__inner{
+    max-width: $max-width;
+}
