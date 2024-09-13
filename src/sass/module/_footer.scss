@@ -3,6 +3,7 @@
 .footer{
     background-color: #5B9E4D;
     text-align: center;
+    margin-top: rem(300);
     padding: rem(80) 0 rem(100);
     @include mq(md) {
         padding: rem(100) 0 rem(120);

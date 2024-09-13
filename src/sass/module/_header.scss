@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.header__inner{
+    padding: rem(25) rem(25) rem(0);
+    @include mq(md) {
+        padding: rem(10) rem(40) 0;
+    }
+}
+
+.header__logo{
+    width: rem(121);
+    height: rem(45);
+    @include mq(md) {
+        width: rem(174);
+        height: rem(65);
+    }
+}
