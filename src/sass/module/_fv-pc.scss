@@ -46,9 +46,6 @@
     }
 }
 
-
-
-
 .fv-pc__wrapper {
     min-height: rem(231);
     background-color: $green;
@@ -83,6 +80,10 @@
     pointer-events: none;
 }
 
+.fv-pc__content{
+    position: relative;
+}
+
 .fv-pc__icon{
     width: rem(182);
     height: rem(118);
@@ -109,6 +110,14 @@
     font-size: rem(30);
 }
 
+.fv-pc_arrow{
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    width: rem(21);
+    height: rem(25);
+}
+
 .fv-pc__img{
     width: 100%;
     height: rem(231);
@@ -123,6 +132,5 @@
 .fv-pc__title{
     margin-top: rem(63);
     font-size: rem(48);
-    
     font-weight: $bold;
 }

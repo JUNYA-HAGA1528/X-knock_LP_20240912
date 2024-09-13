@@ -1,5 +1,26 @@
 @use "global" as *;
 
+.header{
+    text-align: center;
+    position: relative;
+}
+
+.header::before{
+    @include mq(md) {
+        background-image: url('../images/common/top-pattern-pc.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        top: -100px;
+        right: calc(50% - min(50%, 48%));
+        width: rem(380);
+        height: rem(239);
+        z-index: -1;
+    }
+}
+
 .header__inner{
     padding: rem(25) rem(25) rem(0);
     @include mq(md) {
