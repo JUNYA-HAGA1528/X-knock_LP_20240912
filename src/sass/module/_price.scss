@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.price__bg{
+    font-weight: $bold;
+    background-image: url('../images/common/price-bg-sp.png');
+    background-position: center calc(-27% + 50%);
+    background-repeat: no-repeat;
+    background-size: rem(848) rem(426);
+    padding-top: rem(120);
+    @include mq(md) {
+        background-image: url('../images/common/price-bg.png');
+        background-position: center calc(20px + 50%);
+        background-repeat: no-repeat;
+        background-size: rem(1763) rem(540); /* 高さを少し小さく調整 */
+        padding-top: rem(101);
+    }
+}
+
+.price__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(35);
+    @include mq(md) {
+        max-width: rem(1030);
+        padding: 0 rem(25);
+    }
+}
+
+.price__img{
+    width: rem(246);
+    height: rem(154);
+    margin: 0 auto;
+    @include mq(md) {
+        width: rem(362);
+        height: rem(227);
+        margin: 0 auto;
+    }
+}
+
+.price__title{
+    margin-top: rem(60);
+    text-align: center;
+    color: $green;
+    font-size: rem(24);
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.price__text{
+    margin-top: rem(40);
+    font-size: rem(16);
+    line-height: 2;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        font-size: rem(20);
+        letter-spacing: 0.04em;
+    }
+}

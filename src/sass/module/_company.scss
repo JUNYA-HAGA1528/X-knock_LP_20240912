@@ -1,17 +1,14 @@
 @use "global" as *;
 
-.footer{
-    background-color: #5B9E4D;
+.company{
     text-align: center;
-    margin-top: rem(300);
-    padding: rem(80) 0 rem(100);
-    @include mq(md) {
-        padding: rem(100) 0 rem(120);
-    }
 }
 
-.footer__heading{
-    color: $white;
+
+
+
+.company__heading{
+    color: $green;
     font-weight: $bold;
     width: rem(340);
     margin: 0 auto;
@@ -20,28 +17,17 @@
     }
 }
 
-.footer__inner{
-    max-width: rem(390);
-    margin: 0 auto;
-    padding: 0 rem(10);
-    @include mq(md) {
-        max-width: rem(1230);
-        padding: 0 rem(25);
-    }
-}
-
-
 /*PCのタイトル*/
-.footer__title-pc{
-    width: rem(500);
+.company__title-pc{
+    width: rem(601);
     margin: 0 auto;
     padding: rem(5) 0;
-    border-top: solid 2px $white;
-    border-bottom: solid 2px $white;
+    border-top: solid 2px $green;
+    border-bottom: solid 2px $green;
     font-size: rem(36);
 }
 
-.footer__title-pc-font{
+.company__title-pc-font{
     font-size: rem(32);
 }
 
@@ -49,56 +35,65 @@
 
 
 /*SPのタイトル*/
-.footer__title-sp-head{
+.company__title-sp-head{
     font-size: rem(16);
     letter-spacing: 0.1em;
 }
 
-.footer__title-sp-bottom{
+.company__title-sp-bottom{
     margin-top: rem(10);
     padding: rem(10) 0;
     font-size: rem(24);
     letter-spacing: 0.04em;
-    border-top: solid 2px $white;
-    border-bottom: solid 2px $white;
+    border-top: solid 2px $green;
+    border-bottom: solid 2px $green;
 }
 
 
 
 
-.footer__subtitle{
+.company__subtitle{
+    color: $black;
     margin-top: rem(20);
     font-size: rem(24);
     letter-spacing: 0.1em;
     line-height: 1.1;
     @include mq(md) {
-        margin-top: rem(0);
+        margin-top: rem(10);
         font-size: rem(42);
     }
 }
 
-.footer__subtitle-font{
+.company__subtitle-color{
+    color:#C06223;
+}
+
+.company__subtitle-font{
+    color: $green;
     font-size: rem(36);
     @include mq(md) {
         font-size: rem(64);
     }
 }
 
-.footer__subtitle-margin{
+.company__subtitle-margin{
     margin-left: rem(16);
     @include mq(md) {
         margin-left: 0;
     }
 }
 
-
-
-
-
-
-.footer__list{
-    margin-top: rem(60);
+.company__text{
+    text-align: left;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 2;
+    letter-spacing: 0.07em;
+    margin-top: rem(20);
     @include mq(md) {
-        margin-top: rem(80);
+        font-size: rem(20);
+        width: rem(980);
+        margin: rem(27) auto 0;
+        letter-spacing: 0.01em;
     }
 }

@@ -6,7 +6,7 @@
 
 .fv-pc{
     background-color: $white;
-    padding: rem(20) rem(20) rem(119);
+    padding: rem(20) rem(20) rem(239);
     border-radius: rem(16);
 }
 
@@ -74,9 +74,8 @@
     font-weight: $bold;
 }
 
-.fv-pc__bg{
-    background-image: url('../images/common/fv-name-bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.fv-pc__bg-img{
+    width: rem(1492);
+    height: rem(123);
+    margin: 0 auto;
 }

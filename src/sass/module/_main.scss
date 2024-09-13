@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.main {
+    text-align: center;
+    margin-top: rem(-115);
+    background-image: url('../images/common/main-bg-sp.png');
+    background-position: top center ; /* Y軸方向に10px下に移動 */
+    background-repeat: no-repeat;
+    background-size: rem(415) rem(61);
+    position: relative;
+    z-index: 10;
+    @include mq(md) {
+        margin-top: rem(-180);
+        background-image: url('../images/common/main-bg.png');
+        background-position: center 10px; /* Y軸方向に10px下に移動 */
+        background-repeat: no-repeat;
+        background-size: rem(1492) rem(123);
+    }
+}
+
+
+
+.main__text{
+    font-weight: $bold;
+    font-size: rem(20);
+    @include mq(md) {
+        font-size: rem(48);
+    }
+}
+
+.main__heading{
+    margin-top: rem(15);
+    @include mq(md) {
+        margin-top: rem(30);
+    }
+}
+
+.main__title{
+    color: $green;
+    font-family: $second-font;
+    font-size: rem(82.84);
+    font-weight: $regular;
+    line-height: 0.9;
+    @include mq(md) {
+        font-size: rem(218);
+    }
+}
+
+.main__subtitle{
+    font-family: $fourth-font;
+    color: $green;
+    font-size: rem(15.2);
+    font-weight: $semiBold;
+    letter-spacing: 0.14em;
+    @include mq(md) {
+        font-size: rem(40);
+    }
+}
+
+.main__bill{
+    margin-top: rem(4);
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        margin-top: rem(10);
+        font-size: rem(36);
+    }
+}
+
+.main__prefectures{
+    margin-top: rem(4);
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        margin-top: rem(10);
+        font-size: rem(32);
+    }
+}

@@ -18,6 +18,7 @@ $padding-sp: 25px;
 $base-font-family: "yu-gothic, sans-serif";
 $second-font: "Emblema One", system-ui;
 $third-font: "Noto Sans JP", sans-serif;
+$fourth-font:'A-OTF Shin Go Pro', sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
@@ -42,7 +43,7 @@ $blue:#214F70;
 
 body {
   font-family: $base-font-family;
-  background-color: #F3F0DB;
+  background-color: #FCF7E1;
   color: $black;
 }
 
