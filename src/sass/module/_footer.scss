@@ -1,0 +1,100 @@
+@use "global" as *;
+
+.footer{
+    background-color: #5B9E4D;
+    text-align: center;
+    padding: rem(80) 0 rem(100);
+    @include mq(md) {
+        padding: rem(100) 0 rem(120);
+    }
+}
+
+.footer__inner{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 rem(10);
+    @include mq(md) {
+        max-width: rem(1230);
+        padding: 0 rem(25);
+    }
+}
+
+.footer__heading{
+    color: $white;
+    font-weight: $bold;
+}
+
+
+
+
+/*PCのタイトル*/
+.footer__title-pc{
+    width: rem(500);
+    margin: 0 auto;
+    padding: rem(5) 0;
+    border-top: solid 2px $white;
+    border-bottom: solid 2px $white;
+    font-size: rem(36);
+}
+
+.footer__title-pc-font{
+    font-size: rem(32);
+}
+
+
+
+
+/*SPのタイトル*/
+.footer__title-sp-head{
+    font-size: rem(16);
+    letter-spacing: 0.1em;
+}
+
+.footer__title-sp-bottom{
+    margin-top: rem(10);
+    padding: rem(10) 0;
+    font-size: rem(24);
+    letter-spacing: 0.04em;
+    border-top: solid 2px $white;
+    border-bottom: solid 2px $white;
+}
+
+
+
+
+.footer__subtitle{
+    margin-top: rem(20);
+    font-size: rem(24);
+    letter-spacing: 0.1em;
+    line-height: 1.1;
+    @include mq(md) {
+        margin-top: rem(0);
+        font-size: rem(42);
+    }
+}
+
+.footer__subtitle-font{
+    font-size: rem(36);
+    @include mq(md) {
+        font-size: rem(63);
+    }
+}
+
+.footer__subtitle-margin{
+    margin-left: rem(16);
+    @include mq(md) {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+.footer__list{
+    margin-top: rem(60);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}

@@ -2,7 +2,7 @@
 
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1230px;
+$inner: 1180px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 $max-width:500px;
@@ -15,13 +15,14 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "yu-gothic-pr6n, sans-serif";
+$base-font-family: "yu-gothic, sans-serif";
 $second-font: "Emblema One", system-ui;
+$third-font: "Noto Sans JP", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
-$regular: 300;
-$normal: 400;
+
+$regular: 400;
 $medium: 500;
 $semiBold: 600;
 $bold: 700;
@@ -41,5 +42,7 @@ $blue:#214F70;
 
 body {
   font-family: $base-font-family;
+  background-color: #F3F0DB;
+  color: $black;
 }
 
