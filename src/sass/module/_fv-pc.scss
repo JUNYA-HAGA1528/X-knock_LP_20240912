@@ -46,3 +46,30 @@
     }
 }
 
+.fv-pc__img{
+    width: 100%;
+    height: rem(231);
+}
+
+.fv-pc__img img {
+    aspect-ratio:369/231 ;
+    width: 100%;
+    height: 100%;
+}
+
+.fv-pc__img--margin{
+    width: 100%;
+    height: rem(237);
+}
+
+.fv-pc__img--margin img {
+    aspect-ratio:369/237 ;
+    width: 100%;
+    height: 100%;
+}
+
+.fv-pc__title{
+    margin-top: rem(63);
+    font-size: rem(48);
+    font-weight: $bold;
+}

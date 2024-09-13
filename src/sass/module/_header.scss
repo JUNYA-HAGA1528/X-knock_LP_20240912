@@ -3,6 +3,8 @@
 .header{
     text-align: center;
     position: relative;
+    max-width: rem(1440);
+    margin: auto;
 }
 
 .header::before{
@@ -14,7 +16,7 @@
         position: absolute;
         content: "";
         top: -100px;
-        right: calc(50% - min(50%, 48%));
+        right: calc(50% - min(48%, 48%));
         width: rem(380);
         height: rem(239);
         z-index: -1;
