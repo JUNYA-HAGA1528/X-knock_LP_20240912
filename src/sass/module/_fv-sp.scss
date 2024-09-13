@@ -1,11 +1,37 @@
 @use "global" as *;
 
-.fv{
-    text-align: center;
+.fv-sp{
+    position: relative;
+    margin-top: rem(-10);
 }
 
-.fv-sp{
+
+.fv-sp__name{
+    color: $green;
+    margin-right: rem(10);
+    text-align: right;
+    font-size: rem(18);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+}
+
+.fv-sp__name::before{
+    background-image: url('../images/common/fv-name-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: -8px;
+    right: calc(50% - min(57.5%, rem(800)));
+    width: rem(225);
+    height: rem(141);
+    z-index: -1;
+}
+
+.fv-sp__content{
     background-color: $white;
+    margin-top: rem(10);
     padding: rem(20) rem(10) rem(55);
     border-radius: rem(16);
 }

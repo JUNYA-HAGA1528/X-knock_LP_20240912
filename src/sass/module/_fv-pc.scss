@@ -73,3 +73,10 @@
     font-size: rem(48);
     font-weight: $bold;
 }
+
+.fv-pc__bg{
+    background-image: url('../images/common/fv-name-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
