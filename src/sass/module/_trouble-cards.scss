@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.trouble-cards{
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.trouble-cards__item{
+    @include mq(md){
+        max-width: calc(33.3333% - 2.3125rem * 2 / 3 );
+        width: 100%;
+    }
+}
+
+.trouble-cards__item + .trouble-cards__item{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(37);
+    }
+}
+
+
+
+
+/* 枚数が増えたときのための処理 */
+.trouble-cards__item:nth-child(3n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.trouble-cards__item:nth-child(n + 4){
+    @include mq(md){
+        margin-top: 2.5rem;
+    }
+}

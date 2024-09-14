@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.button__item + .button__item{
+.button__link + .button__link{
     margin-top: rem(20);
 }
 
 /*ボタン（赤）*/
-.button__item {
+.button__item  {
     background: #C06223;
     position: relative;
     color: $white;
@@ -53,4 +53,58 @@
 
 .button__item--green span::after {
 	background-image: url(../images/common/icon-bg-white.png);
+}
+
+
+
+
+
+/*ボタン（trouble）*/
+.button__item--trouble{
+    background: $green;
+    position: relative;
+    color: $white;
+    font-size: rem(15);
+    font-weight: $bold;
+    width: rem(340);
+    padding: rem(22.5) 0;
+    border-radius: rem(138.63);
+    @include mq(md) {
+        width: rem(626);
+        padding: rem(37.5) 0;
+        font-size: rem(24);
+    }
+}
+
+.button__item--trouble span::after {
+	background-image: url(../images/common/icon-bg-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 48%;
+    right: rem(20);
+    width: rem(20);
+	height: rem(20);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 48%;
+        right: rem(45);
+        width: rem(38);
+        height: rem(38);
+    }
+}
+
+.button__item--trouble::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px dashed $white;
+    border-radius: rem(138.63);
+    pointer-events: none;
 }

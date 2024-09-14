@@ -1,0 +1,114 @@
+@use "global" as *;
+
+.trouble{
+    text-align: center;
+}
+
+.trouble__inner{
+    max-width: $max-width;
+}
+
+
+
+.trouble__title{
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    margin-top: rem(40);
+    position: relative;
+    display: inline-block;
+    @include mq(md) {
+        margin-top: rem(20);
+        font-size: rem(36);
+    }
+}
+
+.trouble__title::before,
+.trouble__title::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    width: rem(65);
+    height: rem(2);
+    background-color: $green;
+    @include mq(md) {
+        width: rem(244);
+        top: 40%;
+    }
+}
+
+.trouble__title::before {
+    left: -36.5%;
+    @include mq(md) {
+        left: -45%;
+    }
+}
+
+.trouble__title::after {
+    right: -36.5%;
+    @include mq(md) {
+        right: -45%;
+    }
+}
+
+
+
+.trouble__title span{
+    color: $green;
+    font-size: rem(32);
+    @include mq(md) {
+        font-size: rem(42);
+    }
+}
+
+.trouble__subtitle{
+    text-align: left;
+    margin-top: rem(20);
+    padding: 0 rem(10);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 2;
+    @include mq(md) {
+        text-align: center;
+        margin-top: rem(40);
+        padding: 0;
+        font-size: rem(20);
+    }
+}
+
+.trouble__img{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.trouble-card__source{
+    margin-top: rem(20);
+    display: flex;
+    justify-content: center;
+    font-size: rem(10);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        margin-top: rem(40);
+        font-size: rem(13);
+    }
+}
+
+.trouble-card__source-text{
+    text-decoration: underline;
+}
+
+.trouble-card__source-text a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.trouble__list{
+    margin-top: rem(60);
+    @include mq(md) {
+        margin-top: rem(49);
+    }
+}
+

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.head-title__en{
+    text-transform: uppercase;
+    font-family: $second-font;
+    font-size: rem(24);
+    letter-spacing: 0.01em;
+    color: $green;
+    position: relative;
+    z-index: 1;
+}
+
+.head-title {
+    position: relative;
+}
+
+.head-title img {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(59);
+    height: rem(63);
+}

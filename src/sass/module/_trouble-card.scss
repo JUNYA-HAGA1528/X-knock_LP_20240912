@@ -1,0 +1,84 @@
+@use "global" as *;
+
+
+.trouble-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    min-height: 100%;
+}
+
+
+.trouble-card__number{
+    font-family: $second-font;
+    color: $green;
+    font-size: rem(22);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.trouble-card__title{
+    color: #32562A;
+    font-size: rem(22);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.trouble-card__number span {
+    color: #6E6A5C;
+    font-size: rem(32);
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.trouble-card__sentence{
+    text-align: left;
+    color: $white;
+    box-shadow: 1px 6px 7px rgba(0, 0, 0, 0.2);
+    padding: rem(30) rem(20);
+    background-color: $green;
+    border-radius: rem(16);
+    position: relative;
+    margin-top: rem(20);
+    height: rem(231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* 追加 */
+    @include mq(md) {
+        padding: rem(31) rem(22);
+    }
+}
+
+.trouble-card__sentence::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px dashed $white;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.trouble-card__text{
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(28/16);
+    letter-spacing: 0.02em;
+}
+
+.trouble__buttons{
+    margin-top: rem(80);
+    position: relative;
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
