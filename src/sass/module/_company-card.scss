@@ -2,6 +2,7 @@
 
 
 .company-card{
+    text-align: center;
     background-color: $white;
     padding: rem(37) 0 rem(40);
     border-radius: rem(14.79);
@@ -12,10 +13,16 @@
     font-size: rem(16);
     font-weight: $bold;
     letter-spacing: 0.01em;
-    line-height: 1.25;
+    line-height: 1.55;
+    margin-left: rem(8);
     @include mq(md) {
         font-size: rem(20);
     }
+}
+
+.company-card__head-font{
+    color: $green;
+    font-size: rem(24);
 }
 
 .company-card__border{
@@ -25,11 +32,6 @@
     @include mq(md) {
         margin: rem(31) auto rem(25);
     }
-}
-
-.company-card__head-font{
-    color: $green;
-    font-size: rem(24);
 }
 
 .company-card__name{
@@ -48,4 +50,129 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.company-card__source{
+    margin-top: rem(10);
+    display: flex;
+    justify-content: center;
+    font-size: rem(10);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+}
+
+.company-card__source-text{
+    text-decoration: underline;
+}
+
+.company-card__source-text a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+
+
+.company-card__content {
+    margin-top: rem(20);
+    padding: 0 rem(16);
+    display: flex; /* 追加 */
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: stretch; /* 要素の高さを均等にする */
+}
+
+.company-card__list{
+    background-color:rgba(91, 158, 77, 0.14);
+    border-radius: rem(8);
+    padding: rem(13) rem(14);
+}
+
+.company-card__item{
+    display: flex;
+    align-items: center;
+    gap: 0 rem(26);
+}
+
+.company-card__item + .company-card__item{
+    margin-top: rem(10.8);
+}
+
+.company-card__item dt {
+    background-color: $green;
+    color: $white;
+    font-size: rem(11);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    border-radius: rem(4.9);
+    width: 52%;
+    padding: rem(9) 0;
+}
+
+.company-card__item dd {
+    text-align: center;
+    font-size: rem(18);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    width: 55%;
+}
+
+.company-card__item--font dd {
+    font-size: rem(13);
+    line-height: 1.25;
+}
+
+.company-card__item--font span {
+    font-size: rem(10);
+}
+
+.company-card__item img {
+    width: rem(27);
+    height: rem(27);
+    margin: 0 auto;
+}
+
+.company-card__sentence {
+    margin-top: rem(20);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 中央に配置 */
+}
+
+.company-card__text{
+    background-color: rgba(243, 240, 219, 0.5);
+    padding: rem(20) rem(10);
+    text-align: left;
+    font-size: rem(16);
+    line-height: calc(28/16);
+    font-weight: $medium;
+    letter-spacing: 0.06em;
+}
+
+.company-card__sentence-color{
+    color: $green;
+    font-weight: $bold;
+}
+
+
+/*ボタン*/
+.company-card__buttons {
+    margin-top: rem(23); /* 追加 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-features{
+    margin-top: rem(20);
+}
+
+.company-features img {
+    aspect-ratio: 310/228;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio: 310/228;
+    }
 }

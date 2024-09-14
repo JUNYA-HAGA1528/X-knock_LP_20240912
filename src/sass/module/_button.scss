@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.button__item + .button__item{
+    margin-top: rem(20);
+}
+
+/*ボタン（赤）*/
+.button__item {
+    background: #C06223;
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: rem(310);
+    padding: rem(23.5) 0;
+    border-radius: rem(8);
+    z-index: 1;
+    transition: 0.4s;
+    letter-spacing: 0.01em;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+.button__item span {
+    padding-right: rem(22);
+}
+
+.button__item span::after {
+	background-image: url(../images/common/icon-bg-red.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 48%;
+    right: rem(16);
+    width: rem(24);
+	height: rem(24);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+}
+
+
+
+/*ボタン（緑）*/
+.button__item--green {
+    background: $green;
+}
+
+.button__item--green span {
+    padding-right: rem(0);
+}
+
+.button__item--green span::after {
+	background-image: url(../images/common/icon-bg-white.png);
+}
