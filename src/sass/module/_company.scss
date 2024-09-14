@@ -2,9 +2,27 @@
 
 .company{
     text-align: center;
+    background-image: url('../images/common/company-bg-sp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mq(md) {
+        background-image: none;
+    }
 }
 
+.company__inner{
+    padding: rem(80) 0 rem(100);
+    max-width: $max-width;
+    @include mq(md) {
+        background-image: url('../images/common/company-bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        padding: rem(80) 0 rem(95);
+    }
 
+}
 
 
 .company__heading{
@@ -100,10 +118,9 @@
 
 .company__list{
     margin-top: rem(60);
-    padding: 0 0 rem(100);
     @include mq(md) {
         margin-top: rem(80);
-        padding: 0 rem(40) rem(95);
+        padding: 0 rem(40);
     }
 }
 

@@ -76,9 +76,7 @@
 .company-card__content {
     margin-top: rem(20);
     padding: 0 rem(16);
-    display: flex; /* 追加 */
-    flex-direction: column; /* 縦方向に配置 */
-    align-items: stretch; /* 要素の高さを均等にする */
+
 }
 
 .company-card__list{
@@ -133,10 +131,6 @@
 
 .company-card__sentence {
     margin-top: rem(20);
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* 中央に配置 */
 }
 
 .company-card__text{
@@ -147,6 +141,7 @@
     line-height: calc(28/16);
     font-weight: $medium;
     letter-spacing: 0.06em;
+    min-height: rem(264);
 }
 
 .company-card__sentence-color{
@@ -176,3 +171,7 @@
         aspect-ratio: 310/228;
     }
 }
+
+
+
+
