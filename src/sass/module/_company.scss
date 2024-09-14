@@ -97,3 +97,30 @@
         letter-spacing: 0.01em;
     }
 }
+
+.company__list{
+    margin-top: rem(60);
+    padding: 0 0 rem(100);
+    @include mq(md) {
+        margin-top: rem(80);
+        padding: 0 rem(40) rem(95);
+    }
+}
+
+.company-card__source{
+    margin-top: rem(10);
+    display: flex;
+    justify-content: center;
+    font-size: rem(10);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+}
+
+.company-card__source-text{
+    text-decoration: underline;
+}
+
+.company-card__source-text a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
