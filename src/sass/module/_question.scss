@@ -2,10 +2,18 @@
 
 .question{
     text-align: center;
+    position: relative;
+    z-index: 1;
+    @include mq(md) {
+        background-image: url('../images/common/price-bg.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: rem(1763) rem(540); /* 高さを少し小さく調整 */
+    }
 }
 
 .question__inner{
-    max-width: max-width;
+    max-width: $max-width;
     margin: auto;
     padding: 0 rem(25);
     @include mq(md) {
@@ -53,6 +61,108 @@
     font-size: rem(32);
 }
 
+
+
+.question__list{
+    max-width: rem(780);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.question__list + .question__list{
+    margin-top: rem(60);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.question__item{
+    text-align: left;
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        gap: 0 rem(40);
+    }
+}
+
+.question__item--answer{
+    @include mq(md) {
+        align-items:flex-start;
+    }
+}
+
+.question__item + .question__item{
+    margin-top: rem(30);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.question__item dt {
+    width: rem(46);
+    height: rem(46); 
+    margin: 0 auto;
+    @include mq(md) {
+        width: rem(62);
+        height: rem(62); 
+    }
+}
+
+.question__item dd {
+    width: 100%;
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    margin-top: rem(20);
+    text-align: center;
+    @include mq(md) {
+        text-align: left;
+        width: 87.07%;
+        margin-top: rem(0);
+        font-size: rem(24);
+    }
+}
+
+.question__item--answer dd {
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(28/16);
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 0 rem(30);
+    @include mq(md) {
+        font-size: rem(16);
+        padding: 0;
+    }
+}
+
 .question__buttons{
     margin-top: rem(40);
+}
+
+
+
+.question__content {
+    position: relative;
+    margin-top: rem(61);
+    padding: rem(40) 0 rem(80);
+    @include mq(md) {
+        margin-top: rem(40);
+        padding: rem(60) 0 rem(80);
+    }
+}
+
+.question__frame img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* フレームを背景として表示したい場合 */
+    width: 100%;
+    height: 100%;
+    @include mq(md) {
+        width: 100%;
+        height: 100%;
+    }
 }

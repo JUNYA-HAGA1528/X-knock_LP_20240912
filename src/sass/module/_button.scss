@@ -195,7 +195,7 @@
     font-weight: $bold;
     width: rem(280);
     margin-top: rem(4);
-    padding: rem(17.5) 0;
+    padding: rem(12.5) 0;
     border-radius: rem(138.63);
     text-decoration: none;
     @include mq(md) {
@@ -214,7 +214,7 @@
 	content: "";
     position: absolute;
     top: 52%;
-    right: rem(30);
+    right: rem(20);
     width: rem(17);
 	height: rem(17);
 	transform: translateY(-50%);
@@ -241,6 +241,7 @@
 
 .button__text--blue{
     color: $blue;
+    font-size: rem(12);
     @include mq(md) {
         font-size: rem(16.36);
     }
