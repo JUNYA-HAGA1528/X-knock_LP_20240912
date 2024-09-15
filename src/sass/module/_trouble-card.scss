@@ -37,7 +37,7 @@
     }
 }
 
-.trouble-card__sentence{
+.trouble-card__sentence {
     text-align: left;
     color: $white;
     box-shadow: 1px 6px 7px rgba(0, 0, 0, 0.2);
@@ -46,15 +46,16 @@
     border-radius: rem(16);
     position: relative;
     margin-top: rem(20);
-    height: rem(231);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; /* 追加 */
+    align-items: center; /* 子要素を中央揃え */
+    justify-content: center; /* 縦方向でも中央揃え */
+    flex-grow: 1;
     @include mq(md) {
-        padding: rem(31) rem(22);
+        padding: rem(18) rem(22);
     }
 }
+
 
 .trouble-card__sentence::before {
     content: "";
@@ -68,11 +69,15 @@
     pointer-events: none;
 }
 
-.trouble-card__text{
+.trouble-card__text {
     font-size: rem(16);
     font-weight: $bold;
     line-height: calc(28/16);
     letter-spacing: 0.02em;
+    display: flex;
+    justify-content: flex-start; /* テキストを左寄せ */
+    text-align: left; /* テキスト自体も左寄せ */
+    width: 100%; /* 左寄せのために幅を100%に設定 */
 }
 
 .trouble__buttons{

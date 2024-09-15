@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.caution{
+    text-align: center;
+}
+
+.caution__inner{
+    background-color: #F3F0DB;
+    border-radius: rem(16);
+    padding: rem(90) 0 rem(100);
+}
+
+.caution__title{
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    margin-top: rem(40);
+    border-bottom: solid 2px $red;
+    display: inline-block;
+    @include mq(md) {
+        margin-top: rem(20);
+        font-size: rem(36);
+    }
+}
+
+.caution__title span{
+    color: $red;
+    font-size: rem(32);
+    @include mq(md) {
+        font-size: rem(42);
+    }
+}
+
+.caution__subtitle{
+    text-align: left;
+    margin-top: rem(40);
+    padding: 0 rem(10);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        text-align: left;
+        margin-top: rem(56);
+        padding: 0;
+        font-size: rem(20);
+        width: rem(1020);
+        margin: 0 auto;
+    }
+}

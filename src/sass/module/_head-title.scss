@@ -10,8 +10,13 @@
     z-index: 1;
 }
 
+.head-title__en--red{
+    color: $red;
+}
+
 .head-title {
     position: relative;
+    text-align: center;
 }
 
 .head-title img {
