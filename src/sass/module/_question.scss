@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.question{
+    text-align: center;
+}
+
+.question__inner{
+    max-width: max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1070);
+    }
+}
+
+.question__switching{
+    display: inline-block;
+    margin-top: rem(36);
+    @include mq(md) {
+        margin-top: rem(20);
+
+    }
+}
+
+.question__title-pc{
+    font-size: rem(36);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    border-bottom: solid 2px $blue;
+}
+
+.question__title-pc span{
+    color: $blue;
+    font-size: rem(42);
+}
+
+.question__title-sp{
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+}
+
+.question__title-sp-font{
+    font-size: rem(32);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    text-decoration: underline;
+    text-decoration-color: $blue;
+}
+
+.question__title-sp-font span{
+    color: $blue;
+    font-size: rem(32);
+}
+
+.question__buttons{
+    margin-top: rem(40);
+}

@@ -181,3 +181,73 @@
         font-size: rem(16);
     }
 }
+
+
+
+
+
+/*ボタン（question）*/
+.button__item--question{
+    background: $blue;
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: rem(280);
+    margin-top: rem(4);
+    padding: rem(17.5) 0;
+    border-radius: rem(138.63);
+    text-decoration: none;
+    @include mq(md) {
+        width: rem(379);
+        margin-top: rem(7);
+        padding: rem(16.5) 0;
+        font-size: rem(22.34);
+    }
+}
+
+.button__item--question span::after {
+	background-image: url(../images/common/icon-bg-blue.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 52%;
+    right: rem(30);
+    width: rem(17);
+	height: rem(17);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 48%;
+        right: rem(30);
+        width: rem(23);
+        height: rem(23);
+    }
+}
+
+.button__item--question::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px dashed $white;
+    border-radius: rem(138.63);
+    pointer-events: none;
+}
+
+.button__text--blue{
+    color: $blue;
+    @include mq(md) {
+        font-size: rem(16.36);
+    }
+}
+
+.button__item--question span {
+    text-decoration: underline;
+    text-decoration-color: $white;
+    padding: 0;
+}
