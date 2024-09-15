@@ -108,3 +108,76 @@
     border-radius: rem(138.63);
     pointer-events: none;
 }
+
+
+
+
+
+/*ボタン（caution）*/
+.button__item--caution{
+    background: $red;
+    position: relative;
+    color: $white;
+    font-size: rem(15);
+    font-weight: $bold;
+    width: rem(320);
+    margin-top: rem(4);
+    padding: rem(17.5) 0;
+    border-radius: rem(138.63);
+    text-decoration: none;
+    @include mq(md) {
+        width: rem(626);
+        margin-top: rem(7);
+        padding: rem(37.5) 0;
+        font-size: rem(24);
+    }
+}
+
+.button__item--caution span::after {
+	background-image: url(../images/common/icon-bg-red.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 52%;
+    right: rem(30);
+    width: rem(20);
+	height: rem(20);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 48%;
+        right: rem(45);
+        width: rem(38);
+        height: rem(38);
+    }
+}
+
+.button__item--caution::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px dashed $white;
+    border-radius: rem(138.63);
+    pointer-events: none;
+}
+
+.button__text{
+    color: $red;
+    font-size: rem(15);
+    font-weight: $medium;
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.button__text span {
+    font-size: rem(15);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}

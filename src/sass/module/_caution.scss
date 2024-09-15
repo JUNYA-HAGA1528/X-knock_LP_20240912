@@ -5,46 +5,105 @@
 }
 
 .caution__inner{
-    background-color: #F3F0DB;
     border-radius: rem(16);
-    padding: rem(90) 0 rem(100);
+    max-width: $max-width;
 }
 
-.caution__title{
+.caution__container{
+    background-color: #F3F0DB;
+    border-radius: rem(16);
+    padding: rem(70) 0 rem(60);
+    @include mq(md) {
+        padding: rem(90) 0 rem(100);
+    }
+}
+
+.caution__switching{
+    display: inline-block;
+    margin-top: rem(36);
+    @include mq(md) {
+        margin-top: rem(20);
+
+    }
+}
+
+.caution__title-pc{
+    font-size: rem(36);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    border-bottom: solid 2px $red;
+}
+
+.caution__title-pc span{
+    color: $red;
+    font-size: rem(42);
+}
+
+.caution__title-sp{
     font-size: rem(24);
     font-weight: $bold;
     letter-spacing: 0.01em;
-    margin-top: rem(40);
-    border-bottom: solid 2px $red;
-    display: inline-block;
-    @include mq(md) {
-        margin-top: rem(20);
-        font-size: rem(36);
-    }
+    text-decoration: underline;
+    text-decoration-color: $red;
 }
 
-.caution__title span{
+.caution__title-sp-font{
+    font-size: rem(32);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    text-decoration: underline;
+    text-decoration-color: $red;
+}
+
+
+.caution__title-sp-font span{
     color: $red;
     font-size: rem(32);
-    @include mq(md) {
-        font-size: rem(42);
-    }
 }
 
 .caution__subtitle{
     text-align: left;
     margin-top: rem(40);
-    padding: 0 rem(10);
+    padding: 0 rem(20);
     font-size: rem(16);
     font-weight: $bold;
     line-height: 2;
     letter-spacing: 0.01em;
     @include mq(md) {
         text-align: left;
-        margin-top: rem(56);
         padding: 0;
         font-size: rem(20);
         width: rem(1020);
-        margin: 0 auto;
+        margin: rem(56) auto 0;
     }
+}
+
+.caution__list{
+    max-width: max-width;
+    margin:rem(40) auto 0;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(939);
+    }
+}
+
+.caution__text{
+    text-align: left;
+    margin-top: rem(60);
+    padding: 0 rem(20);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        text-align: left;
+        padding: 0;
+        font-size: rem(20);
+        width: rem(1026);
+        margin: rem(80) auto 0;
+    }
+}
+
+.caution__buttons{
+    margin-top: rem(40);
 }

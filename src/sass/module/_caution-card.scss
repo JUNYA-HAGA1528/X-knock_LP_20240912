@@ -1,0 +1,55 @@
+@use "global" as *;
+
+
+
+.caution-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caution-card__sentence {
+    text-align: center;
+    color: $red;
+    box-shadow: 1px 6px 7px rgba(0, 0, 0, 0.2);
+    padding: rem(18) 0; 
+    background-color: #ECE4CB;
+    border-radius: rem(16);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 子要素を中央揃え */
+    justify-content: center; /* 縦方向でも中央揃え */
+    flex-grow: 1;
+    height: rem(72);
+    @include mq(md) {
+        height: rem(96);
+    }
+}
+
+
+
+
+.caution-card__sentence::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px dashed #32562A;
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+.caution-card__text {
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
