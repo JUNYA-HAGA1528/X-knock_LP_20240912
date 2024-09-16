@@ -1,0 +1,380 @@
+@use "global" as *;
+
+
+.choice{
+    text-align: center;
+}
+
+.choice__heading{
+    position: relative;
+}
+
+.choice__subtitle{
+    font-family: $second-font;
+    color: $green;
+    text-transform: uppercase;
+    font-size: rem(24);
+    font-weight: $regular;
+    letter-spacing: 0.1em;
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.choice__heading{
+    max-width: rem(340);
+    margin: 0 auto;
+    @include mq(md) {
+        max-width: rem(891);
+    }
+}
+
+.choice__title{
+    margin-top: rem(22);
+    font-size: rem(30);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    @include mq(md) {
+        margin-top: rem(0);
+        font-size: rem(42);
+    }
+}
+
+.choice__title-font{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(42);
+    }
+}
+
+.choice__title-font-second{
+    font-size: rem(28);
+    @include mq(md) {
+        font-size: rem(42);
+    }
+}
+
+.choice__title-color{
+    color: $green;
+}
+
+.choice__title-img{
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(0);
+    }
+}
+
+.choice__icon{
+    position: absolute;
+    top: -17%;
+    left: 5%;
+    width: rem(70);
+    height: rem(70);
+    z-index: 0;
+    @include mq(md) {
+        top: -37%;
+        left: -13%;    
+        width: rem(128);
+        height: rem(128);
+    }
+}
+
+.choice__list{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(70);
+    }
+}
+
+.choice__item{
+    position: relative;
+    overflow: hidden;
+}
+
+.choice__item::before{
+    @include mq(md) {
+        background-image: url('../images/common/choice-caption1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";    
+        top: rem(100);
+        left: calc(50% - min(57%, rem(800)));    
+        width: rem(685);
+        height: rem(112);
+    }
+}
+
+.choice__item--second,
+.choice__item--third,
+.choice__item--force{
+    position: relative;
+}
+
+.choice__item--second::before{
+    @include mq(md) {
+        background-image: url('../images/common/choice-caption2.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";    
+        top: rem(100);
+        left: auto;
+        right: calc(50% - min(57%, rem(800)));    
+        width: rem(685);
+        height: rem(112);
+    }
+}
+
+.choice__item--third::before{
+    @include mq(md) {
+        background-image: url('../images/common/choice-caption3.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";    
+        top: rem(100);
+        left: calc(50% - min(57%, rem(800)));    
+        width: rem(685);
+        height: rem(112);
+    }
+}
+
+.choice__item--force::before{
+    @include mq(md) {
+        background-image: url('../images/common/choice-caption4.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";    
+        top: rem(100);
+        left: auto;
+        right: calc(50% - min(57%, rem(800)));    
+        width: rem(685);
+        height: rem(112);
+    }
+}
+
+.choice__item + .choice__item{
+    margin-top: rem(30);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.choice__content {
+    background-image: url('../images/common/choice-bg-sp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% rem(660);
+    max-width: rem(500);
+    margin: 0 auto;
+    padding: rem(120) 0 rem(80);
+    @include mq(md) {
+        background-image: url('../images/common/choice-bg.png');
+        background-position: calc(50% + 130px) center;
+        background-repeat: no-repeat;
+        background-size: rem(1498) rem(690);
+        padding: rem(80) 0 rem(100);
+        max-width: 100%;
+    }
+}
+
+.choice__content--second{
+    background-image: url('../images/common/choice-bg-sp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% rem(660);
+    max-width: rem(500);
+    margin: 0 auto;
+    padding: rem(120) 0 rem(80);
+    @include mq(md) {
+        background-image: url('../images/common/choice-bg.png');
+        background-position: calc(50% + -130px) center;
+        background-repeat: no-repeat;
+        background-size: rem(1498) rem(690);
+        padding: rem(80) 0 rem(100);
+        max-width: 100%;
+    }
+}
+
+
+.choice__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    position: relative;
+    @include mq(md) {
+        max-width: rem(1230);
+    }
+}
+
+.choice__inner::before{
+    background-image: url('../images/common/choice-caption1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top:rem(-75);
+    left: calc(50% - min(57%, rem(800)));
+    width: rem(263);
+    height: rem(52);
+    z-index: 1;
+    @include mq(md) {
+        background-image: none;
+    }
+}
+
+.choice__inner--second::before{
+    background-image: url('../images/common/choice-caption2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top:rem(-75);
+    left: auto;
+    right: calc(50% - min(57%, rem(800)));
+    width: rem(263);
+    height: rem(52);
+    z-index: 1;
+    @include mq(md) {
+        background-image: none;
+    }
+}
+
+.choice__inner--third::before{
+    background-image: url('../images/common/choice-caption3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top:rem(-75);
+    left: calc(50% - min(57%, rem(800)));
+    width: rem(263);
+    height: rem(52);
+    z-index: 1;
+    @include mq(md) {
+        background-image: none;
+    }
+}
+
+.choice__inner--force::before{
+    background-image: url('../images/common/choice-caption4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top:rem(-85);
+    left: auto;
+    right: calc(50% - min(57%, rem(800)));
+    width: rem(263);
+    height: rem(52);
+    z-index: 1;
+    @include mq(md) {
+        background-image: none;
+    }
+}
+
+.choice__img{
+    width: 100%;
+    margin-left: auto;
+    position: relative;
+    padding: 0 rem(10);
+    @include mq(md) {
+        width: 46.53%;
+        padding: 0;
+    }
+}
+
+.choice__img--second{
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
+}
+
+.choice__img img {
+    aspect-ratio:320/199 ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio:549/343 ;
+    }
+}
+
+.choice__comment{
+    position: absolute;
+    bottom: -27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $second-font;
+    color: $white;
+    font-size: rem(36);
+    font-weight: $regular;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    @include mq(md) {
+        bottom: 15%;
+        left: -72%;
+        transform: none;
+        font-size: rem(64);
+    }
+}
+
+.choice__comment--second{
+    @include mq(md) {
+        left: auto;
+        right: -82%;
+    }
+}
+
+.choice__comment--third{
+    @include mq(md) {
+        bottom: 15%;
+        left: -60%;
+        right: auto;
+    }
+}
+
+.choice__sentence{
+    max-width: rem(1026);
+    margin-top: rem(72);
+    margin-left: auto;
+    text-align: left;
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.choice__sentence--second{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.choice__text{
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(28/16);
+    letter-spacing: 0.01em;
+    padding: 0 rem(20);
+    @include mq(md) {
+        font-size: rem(20);
+        line-height: 1.75;
+        padding: 0;
+    }
+}
+
+.choice__text-color{
+    color: $green;
+}

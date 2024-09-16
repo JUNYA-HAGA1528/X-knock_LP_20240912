@@ -30,6 +30,7 @@
 
 .main__heading{
     margin-top: rem(15);
+    text-transform: uppercase;
     @include mq(md) {
         margin-top: rem(30);
     }
