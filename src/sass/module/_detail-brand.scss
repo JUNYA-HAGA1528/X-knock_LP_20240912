@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.detail-brand{
+    margin-top: rem(90);
+}
+
+.detail-brand__inner{
+    max-width: rem(972);
+    margin: 0 auto;
+    padding: 0 rem(25);
+}
+
+
+
+
+
+
+
+.detail-brand__switching{
+    display: inline-block;
+    margin-top: rem(36);
+    @include mq(md) {
+        margin-top: rem(20);
+
+    }
+}
+
+.detail-brand__title-pc{
+    font-size: rem(36);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    border-bottom: solid 2px $green;
+}
+
+.detail-brand__title-sp{
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    text-decoration: underline;
+    text-decoration-color: $green;
+}
+
+.detail-brand__title-sp-font{
+    font-size: rem(28);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    text-decoration: underline;
+    text-decoration-color: $green;
+}
+
+
+.detail-brand__title-sp-font span{
+    color: $red;
+    font-size: rem(32);
+}

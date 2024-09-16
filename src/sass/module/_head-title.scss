@@ -19,6 +19,15 @@
     color: $blue;
 }
 
+.head-title__en--black{
+    color: $black;
+}
+
+.head-title__en--green{
+    color: $green;
+    text-transform: capitalize;
+}
+
 .head-title {
     position: relative;
     text-align: center;
@@ -35,4 +44,9 @@
 
 .head-title--red img {
     top: 50%;
+}
+
+.head-title--brand img,
+.head-title--point img{
+    top: 45%;
 }

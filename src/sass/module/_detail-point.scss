@@ -1,0 +1,98 @@
+@use "global" as *;
+
+.detail-point{
+    margin-top: rem(90);
+}
+
+.detail-point__inner{
+    max-width: rem(972);
+    margin: 0 auto;
+    padding: 0 rem(25);
+}
+
+
+
+
+
+
+
+
+.detail-point__title{
+    color: $green;
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    margin-top: rem(40);
+    position: relative;
+    display: inline-block;
+    @include mq(md) {
+        margin-top: rem(20);
+        font-size: rem(36);
+    }
+}
+
+.detail-point__title::before,
+.detail-point__title::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    width: rem(65);
+    height: rem(2);
+    background-color: $green;
+    @include mq(md) {
+        width: rem(244);
+        top: 40%;
+    }
+}
+
+.detail-point__title::before {
+    left: -36.5%;
+    @include mq(md) {
+        left: -74%;
+    }
+}
+
+.detail-point__title::after {
+    right: -36.5%;
+    @include mq(md) {
+        right: -74%;
+    }
+}
+
+
+
+
+
+
+.detail-point__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(17);
+    margin-top: rem(60);
+    border-bottom: solid 2px $green ;
+    padding-bottom: rem(60);
+}
+
+  /* 各ボックスのスタイル */
+.detail-point__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(268);
+    height: rem(132);
+    border-radius: rem(16);
+    font-size: rem(20);
+    font-weight: $bold;
+    box-shadow: 1px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+.detail-green {
+    background-color: #6daf5e;
+    color: white;
+}
+
+.detail-beige {
+    background-color: #ECE4CB;
+    color: #32562A;
+}

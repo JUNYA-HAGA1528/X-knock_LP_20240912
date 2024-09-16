@@ -2,6 +2,7 @@
 
 .trouble{
     text-align: center;
+    overflow: hidden;
 }
 
 .trouble__inner{
@@ -40,14 +41,14 @@
 .trouble__title::before {
     left: -36.5%;
     @include mq(md) {
-        left: -45%;
+        left: -44%;
     }
 }
 
 .trouble__title::after {
     right: -36.5%;
     @include mq(md) {
-        right: -45%;
+        right: -44%;
     }
 }
 
