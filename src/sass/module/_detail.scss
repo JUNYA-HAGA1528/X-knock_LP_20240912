@@ -103,6 +103,10 @@
     }
 }
 
+.detail__list{
+    margin-top: rem(80);
+}
+
 .detail__aside{
     width: 100%;
     @include mq(md){

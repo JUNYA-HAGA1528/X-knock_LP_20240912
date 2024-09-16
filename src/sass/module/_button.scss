@@ -1,7 +1,18 @@
 @use "global" as *;
 
+.button__flex{
+    @include mq(md) {
+        display: flex;
+        gap: 0 rem(60);
+    }
+}
+
 .button__link + .button__link{
     margin-top: rem(20);
+}
+
+.button__link--margin{
+    margin-top: rem(0);
 }
 
 /*ボタン（赤）*/
@@ -252,4 +263,71 @@
     text-decoration: underline;
     text-decoration-color: $white;
     padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/*ボタン（detail）*/
+
+/*ボタン（赤）*/
+.button__item--detail  {
+    background: $red;
+    position: relative;
+    color: $white;
+    font-size: rem(18.8);
+    font-weight: $bold;
+    width: rem(364);
+    padding: rem(26) 0;
+    border-radius: rem(8);
+    z-index: 1;
+    transition: 0.4s;
+    letter-spacing: 0.01em;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+.button__item span {
+    padding-right: rem(22);
+}
+
+.button__item span::after {
+	background-image: url(../images/common/icon-bg-red.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 48%;
+    right: rem(16);
+    width: rem(24);
+	height: rem(24);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+}
+
+
+
+/*ボタン（緑）*/
+.button__item-green--detail {
+    width: rem(364);
+    background: $green;
+    font-size: rem(21.14);
+    padding: rem(26) 0;
+}
+
+.button__item-green--detail span {
+    padding-right: rem(0);
+}
+
+.button__item-green--detail span::after {
+	background-image: url(../images/common/icon-bg-white.png);
+    right: rem(20);
+    width: rem(24);
+	height: rem(24);
 }
