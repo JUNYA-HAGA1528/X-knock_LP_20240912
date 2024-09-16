@@ -5,9 +5,12 @@
 }
 
 .detail-review__inner{
-    max-width: rem(862);
+    max-width: $max-width;
     margin: 0 auto;
-    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(862);
+        padding: 0 rem(25);
+    }
 }
 
 .detail-review__comment{
@@ -29,8 +32,8 @@
 
 
 .detail-review__list{
-    margin-top: rem(60);
     @include mq(md){
+        margin-top: rem(60);
         display: flex;
         flex-wrap: wrap;
     }
@@ -73,12 +76,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% rem(579);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: rem(80) rem(28) rem(68);
     @include mq(md) {
         background-size: cover;
+        padding: rem(80) rem(28) rem(68);
     }
 }
 
@@ -94,27 +95,40 @@
 
 .detail-review__border{
     margin-top: rem(40);
+    padding: 0 rem(10);
+    @include mq(md) {
+        padding: 0;
+    }
 }
 
 .detail-review__text{
     text-align: left;
     margin-top: rem(40);
+    padding: 0 rem(30);
     font-size: rem(16);
     font-weight: $bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
+    @include mq(md) {
+        padding: 0 ;
+    }
 }
 
 
 
 .detail-review__source{
-    margin-top: rem(40);
+    margin-top: rem(20);
     display: flex;
     justify-content: center;
-    font-size: rem(13);
+    font-size: rem(10);
     font-weight: $medium;
     letter-spacing: 0.01em;
+    @include mq(md) {
+        margin-top: rem(40);
+        font-size: rem(13);
+    }
 }
+
 
 .detail-review__source-text{
     text-decoration: underline;

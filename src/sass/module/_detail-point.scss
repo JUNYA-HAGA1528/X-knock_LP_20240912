@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .detail-point{
-    margin-top: rem(90);
+    margin-top: rem(70);
+    @include mq(md) {
+        margin-top: rem(90);
+    }
 }
 
 .detail-point__inner{
@@ -17,7 +20,7 @@
 
 
 
-.detail-point__title{
+.detail-point__title-pc{
     color: $green;
     font-size: rem(24);
     font-weight: $bold;
@@ -25,14 +28,15 @@
     margin-top: rem(40);
     position: relative;
     display: inline-block;
+
     @include mq(md) {
-        margin-top: rem(20);
         font-size: rem(36);
     }
 }
 
-.detail-point__title::before,
-.detail-point__title::after {
+
+.detail-point__title-pc::before,
+.detail-point__title-pc::after {
     content: "";
     position: absolute;
     top: 35%;
@@ -45,15 +49,15 @@
     }
 }
 
-.detail-point__title::before {
-    left: -36.5%;
+.detail-point__title-pc::before {
+    left: -89.5%;
     @include mq(md) {
         left: -74%;
     }
 }
 
-.detail-point__title::after {
-    right: -36.5%;
+.detail-point__title-pc::after {
+    right: -89.5%;
     @include mq(md) {
         right: -74%;
     }
@@ -64,14 +68,60 @@
 
 
 
+
+
+.detail-point__title-sp{
+    color: $green;
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    margin-top: rem(40);
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.detail-point__title-sp::before,
+.detail-point__title-sp::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    width: rem(65);
+    height: rem(2);
+    background-color: $green;
+
+}
+
+.detail-point__title-sp::before {
+    left: -87%;
+
+}
+
+.detail-point__title-sp::after {
+    right: -87%;
+
+}
+
+
+
+
+
+
+
+
 .detail-point__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: rem(17);
-    margin-top: rem(60);
+    gap: rem(20);
+    margin-top: rem(25);
     border-bottom: solid 2px $green ;
     padding-bottom: rem(60);
+    @include mq(md) {
+        margin-top: rem(60);
+        gap: rem(17);
+    }
 }
 
   /* 各ボックスのスタイル */

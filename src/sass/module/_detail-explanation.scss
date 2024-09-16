@@ -1,5 +1,11 @@
 @use "global" as *;
 
+.detail-explanation{
+    padding: 0 rem(25);
+    @include mq(md) {
+        padding: 0;
+    }
+}
 
 .detail-explanation__item{
     position: relative;
@@ -7,6 +13,17 @@
 }
 
 .detail-explanation__item::before{
+    background-image: url('../images/common/detail-title-sp1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";    
+    top: rem(65);
+    left: calc(50% - min(65%, rem(800)));    
+    width: 95%;
+    height: rem(52);
+    z-index: 12;
     @include mq(md) {
         background-image: url('../images/common/detail-title1.png');
         background-position: center;
@@ -15,6 +32,7 @@
         position: absolute;
         content: "";    
         top: rem(180);
+        left: auto;
         right: calc(50% - min(50%, rem(800)));    
         width: 62.25%;
         height: rem(112);
@@ -30,13 +48,13 @@
 }
 
 .detail-explanation__content {
-    background-image: url('../images/common/choice-bg-sp.png');
+    background-image: url('../images/common/explanation-bg-sp.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% rem(660);
-    max-width: rem(500);
+    background-size: cover;
     margin: 0 auto;
     position: relative;
+    border-radius: rem(8.45);
     @include mq(md) {
         background-image: url('../images/common/choice-bg.png');
         background-position: calc(50% + -50px) center;
@@ -44,6 +62,7 @@
         background-size: 100% rem(660);
         max-width: 100%;
         z-index: 10;
+        border-radius: rem(0);
     }
 }
 
@@ -54,41 +73,34 @@
     background-size: contain;
     position: absolute;
     content: "";
-    top: rem(30);
-    right: calc(50% - min(38%, rem(430)));
-    width: rem(150);
-    height: rem(150);
-    z-index: 11;
+    top: rem(20);
+    right: calc(50% - min(44%, rem(430)));
+    width: rem(122);
+    height: rem(83);
+    z-index: 100;
+    @include mq(md) {
+        top: rem(30);
+        right: calc(50% - min(38%, rem(430)));
+        width: rem(150);
+        height: rem(150);
+    }
 }
 
 .detail-explanation__inner{
     max-width: $max-width;
     margin: auto;
-    position: relative;
     @include mq(md) {
         max-width: rem(840);
-    }
-}
-
-.detail-explanation__inner::before{
-    background-image: url('../images/common/choice-caption1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    content: "";
-    top:rem(-75);
-    right: calc(50% - min(57%, rem(800)));
-    width: rem(263);
-    height: rem(52);
-    z-index: 1;
-    @include mq(md) {
-        background-image: none;
+        padding: 0;
     }
 }
 
 .detail-explanation__wrapper{
     position: relative;
+    padding-top: rem(134);
+    @include mq(md) {
+        padding-top: 0;
+    }
 }
 
 .detail-explanation__number{
@@ -100,10 +112,19 @@
 }
 
 .detail-explanation__flex{
-    display: flex;
-    align-items: flex-end;
-    gap: 0 3%;
-    padding-top: rem(95);
+    padding-bottom: rem(0);
+    @include mq(md) {
+        display: flex;
+        align-items: flex-end;
+        gap: 0 3%;
+        padding-top: rem(95);
+    }
+}
+@media (max-width: 768px) {
+    .detail-explanation__flex {
+        display: flex;
+        flex-direction: column-reverse; /* 子要素の順序を逆にします */
+    }
 }
 
 .detail-explanation__img{
@@ -156,22 +177,36 @@
         font-size: rem(20);
     }
 }
+@media (max-width: 768px) {
+    .detail-explanation__flex-text{
+        font-size: rem(16);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: rem(20);
+    }
+}
 
 .detail-explanation__sentence{
     max-width: rem(680);
-    margin-top: rem(72);
+    margin-top: rem(40);
     text-align: left;
-    padding-bottom: rem(100);
+    padding-bottom: rem(60);
     @include mq(md) {
         margin-top: rem(15);
+        padding-bottom: rem(100);
     }
 }
 
 .detail-explanation__text{
+    padding: 0 rem(20);
     font-size: rem(16);
     font-weight: $bold;
     line-height: calc(28/16);
     letter-spacing: 0.01em;
+    @include mq(md) {
+        padding: 0;
+    }
 }
 
 .detail-explanation__text-color{

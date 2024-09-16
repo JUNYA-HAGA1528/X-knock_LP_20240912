@@ -63,7 +63,7 @@
 }
 
 .button__item--green span::after {
-	background-image: url(../images/common/icon-bg-white.png);
+	background-image: url(../images/common/icon-bg-white.png) !important;
 }
 
 
@@ -88,7 +88,7 @@
 }
 
 .button__item--trouble span::after {
-	background-image: url(../images/common/icon-bg-white.png);
+	background-image: url(../images/common/icon-bg-white.png) !important;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -218,7 +218,7 @@
 }
 
 .button__item--question span::after {
-	background-image: url(../images/common/icon-bg-blue.png);
+	background-image: url(../images/common/icon-bg-blue.png) !important;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -282,14 +282,18 @@
     color: $white;
     font-size: rem(18.8);
     font-weight: $bold;
-    width: rem(364);
-    padding: rem(26) 0;
+    width: rem(340);
+    height: rem(77.87);
     border-radius: rem(8);
     z-index: 1;
     transition: 0.4s;
     letter-spacing: 0.01em;
     overflow: hidden;
     text-decoration: underline;
+    @include mq(md) {
+        width: rem(364);
+        height: rem(83.4);
+    }
 }
 
 .button__item span {
@@ -315,10 +319,16 @@
 
 /*ボタン（緑）*/
 .button__item-green--detail {
-    width: rem(364);
+    margin-top: rem(19.23);
+    width: rem(340);
+    height: rem(77.87);
     background: $green;
     font-size: rem(21.14);
-    padding: rem(26) 0;
+    @include mq(md) {
+        margin-top: rem(0);
+        width: rem(364);
+        height: rem(83.4);
+    }
 }
 
 .button__item-green--detail span {
@@ -330,4 +340,72 @@
     right: rem(20);
     width: rem(24);
 	height: rem(24);
+}
+
+
+
+
+
+
+/*ボタン（brand）*/
+
+/*ボタン（赤）*/
+.button__item--brand  {
+    background: $red;
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: rem(340);
+    height: rem(77.87);
+    border-radius: rem(8);
+    z-index: 1;
+    transition: 0.4s;
+    letter-spacing: 0.01em;
+    overflow: hidden;
+    text-decoration: underline;
+    @include mq(md) {
+        width: rem(364);
+        height: rem(83.4);
+        font-size: rem(18.8);
+    }
+}
+
+
+
+
+/*ボタン（緑）*/
+.button__item-green--brand {
+    width: rem(340);
+    height: rem(77.87);
+    background: $white;
+    color: $green;
+    font-size: rem(20);
+    border: solid 2px $green;
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(0);
+        width: rem(364);
+        height: rem(83.4);
+        font-size: rem(21.14);
+    }
+}
+
+.button__item-green--brand span {
+    padding-right: rem(0);
+}
+
+.button__item-green--brand span::after {
+	background-image: url(../images/common/icon-bg-green.png) !important;
+    right: rem(14);
+    width: rem(26);
+	height: rem(26);
+    top: 43%;
+    @include mq(md) {
+        right: rem(20);
+        width: rem(28);
+        height: rem(28);
+        top: 43%;
+    }
+
 }

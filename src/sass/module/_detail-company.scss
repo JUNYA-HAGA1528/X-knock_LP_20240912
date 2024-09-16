@@ -1,0 +1,182 @@
+@use "global" as *;
+
+.detail-company{
+    background-image: url('../images/common/detail-company-bg-sp.png');
+    background-position: center calc(50% + 85px) ;
+    background-repeat: no-repeat;
+    background-size: rem(752) rem(360);
+    padding-top: rem(90);
+    position: relative;
+    z-index: 10;
+    @include mq(md) {
+        background-image: url('../images/common/detail-company-bg.png');
+        background-position: calc(50% + -125px) calc(50% + 18px);
+        background-repeat: no-repeat;    
+        background-size: rem(1320) rem(565);
+        margin-top: rem(32);
+        padding-top: rem(80);
+        padding-bottom: rem(130);
+    }
+}
+
+.detail-company__inner{
+    max-width: rem(972);
+    margin: 0 auto;
+    padding: 0 rem(25);
+}
+
+
+
+
+
+
+
+
+.detail-company__title{
+    color: $green;
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    margin-top: rem(40);
+    position: relative;
+    display: inline-block;
+    @include mq(md) {
+        margin-top: rem(31);
+        font-size: rem(36);
+    }
+}
+
+.detail-company__title::before,
+.detail-company__title::after {
+    content: "";
+    position: absolute;
+    top: 27%;
+    width: rem(70);
+    height: rem(2);
+    background-color: $green;
+    @include mq(md) {
+        width: rem(309);
+        top: 40%;
+    }
+}
+
+.detail-company__title::before {
+    left: -125.5%;
+    @include mq(md) {
+        left: -263%;
+    }
+}
+
+.detail-company__title::after {
+    right: -125.5%;
+    @include mq(md) {
+        right: -263%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.detail-overview__table {
+    border-collapse: collapse;
+    max-width: rem(585);
+    margin: rem(40) auto auto auto;
+    position: relative;
+    z-index: 10;
+}
+
+.detail-overview__table th, 
+.detail-overview__table td {
+    border: 1px solid #828282; /* セルの境界線 */
+}
+
+.detail-overview__table th {
+    color: $green; /* 文字色を白に */
+    width: rem(149);
+    vertical-align: center; /* 上部揃え */
+    padding: rem(15) 0 rem(12) rem(12);
+    font-weight:$bold ;
+    font-size: rem(17);
+    line-height: calc(21.9/17);
+    text-align: left;
+}
+
+.detail-overview__table td {
+    color: $black; /* 文字色を黒に */
+    text-align: left; /* 左揃え */
+    vertical-align: center; /* 上部揃え */
+    padding: rem(13) rem(0) rem(13) rem(12);
+    font-weight: $medium;
+    font-size: rem(15);
+    line-height: calc(21.9/15);
+    width: rem(435);
+}
+
+.detail-overview__table a {
+    color:$black; /* リンクの文字色 */
+    text-decoration: none; /* リンクの下線を消す */
+}
+
+.detail-overview__table a:hover {
+    text-decoration: underline; /* リンクにホバーしたときの下線 */
+}
+
+.detail-company__border{
+    padding-top: rem(60);
+    border-bottom: solid 2px $green;
+    @include mq(md) {
+        padding-top: rem(80);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .detail-overview__table {
+        display: flex;
+        flex-direction: column; /* 縦に並べる */
+        align-items: center; /* 中央揃えにする */
+        max-width: 100%; /* デバイス幅に対応 */
+        margin: 0 auto; /* テーブル全体を中央に */
+    }
+
+    .detail-overview__table tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 各行を中央揃えにする */
+    }
+
+    .detail-overview__table th, 
+    .detail-overview__table td {
+        display: block;
+        text-align: center; /* テキストを中央に */
+        border: none; /* 境界線を削除 */
+        width: 100%; /* 幅を100%に */
+        padding: 0;
+    }
+
+    .detail-overview__table th {
+        margin-top: rem(40);
+    }
+
+    .detail-overview__table td {
+        padding-top: rem(20);
+    }
+
+    .detail-overview__table a {
+        text-align: center; /* リンクも中央揃え */
+    }
+}
+
