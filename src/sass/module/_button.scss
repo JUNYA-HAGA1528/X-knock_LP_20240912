@@ -242,6 +242,7 @@
 .button__text--blue{
     color: $blue;
     font-size: rem(12);
+    font-weight: $bold;
     @include mq(md) {
         font-size: rem(16.36);
     }

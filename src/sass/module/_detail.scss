@@ -1,0 +1,111 @@
+@use "global" as *;
+
+.detail{
+    text-align: center;
+    @include mq(md) {
+        background-color: none;
+    }
+}
+
+.detail__container{
+    display: flex;
+    justify-content: center;
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md) {
+        max-width: rem(1440);
+    }
+}
+
+.detail__content{
+    width: 100%;
+    background-color: #F3F0DB;
+    padding: rem(80) 0 rem(121);
+    @include mq(md){
+        width: 86.34%;
+        max-width: rem(1100);
+    }
+}
+
+.detail__heading{
+    color: $green;
+    font-weight: $bold;
+    width: rem(340);
+    margin: 0 auto;
+    @include mq(md) {
+        width: 100%;
+    }
+}
+
+/*PCのタイトル*/
+.detail__title-pc{
+    width: rem(415);
+    margin: 0 auto;
+    padding: rem(8) 0 rem(2);
+    border-top: solid 2px $green;
+    border-bottom: solid 2px $green;
+    font-size: rem(36);
+}
+
+.detail__title-pc-font{
+    font-size: rem(32);
+}
+
+
+
+
+/*SPのタイトル*/
+.detail__title-sp-head{
+    font-size: rem(16);
+    letter-spacing: 0.1em;
+}
+
+.detail__title-sp-bottom{
+    margin-top: rem(10);
+    padding: rem(10) 0;
+    font-size: rem(24);
+    letter-spacing: 0.04em;
+    border-top: solid 2px $green;
+    border-bottom: solid 2px $green;
+}
+
+
+
+
+.detail__subtitle{
+    color: $black;
+    margin-top: rem(20);
+    font-size: rem(24);
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    @include mq(md) {
+        margin-top: rem(10);
+        font-size: rem(42);
+    }
+}
+
+.detail__subtitle-color{
+    color:$red;
+}
+
+.detail__subtitle-font{
+    color: $green;
+    font-size: rem(36);
+    @include mq(md) {
+        font-size: rem(64);
+    }
+}
+
+.detail__subtitle-margin{
+    margin-left: rem(16);
+    @include mq(md) {
+        margin-left: 0;
+    }
+}
+
+.detail__aside{
+    width: 100%;
+    @include mq(md){
+        width: 26.56%;
+    }
+}
