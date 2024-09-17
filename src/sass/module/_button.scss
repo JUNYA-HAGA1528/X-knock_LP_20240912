@@ -15,6 +15,8 @@
     margin-top: rem(0);
 }
 
+
+
 /*ボタン（赤）*/
 .button__item  {
     background: $red;
@@ -22,18 +24,15 @@
     color: $white;
     font-size: rem(16);
     font-weight: $bold;
+    padding-right: rem(22);
     width: rem(310);
-    padding: rem(23.5) 0;
+    height: rem(71);
     border-radius: rem(8);
     z-index: 1;
     transition: 0.4s;
     letter-spacing: 0.01em;
     overflow: hidden;
     text-decoration: underline;
-}
-
-.button__item span {
-    padding-right: rem(22);
 }
 
 .button__item span::after {
@@ -51,16 +50,21 @@
 	transition: 0.4s background-color;
 }
 
+.button__item:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+
+
 
 
 /*ボタン（緑）*/
 .button__item--green {
     background: $green;
+    padding-right: 0;
 }
 
-.button__item--green span {
-    padding-right: rem(0);
-}
 
 .button__item--green span::after {
 	background-image: url(../images/common/icon-bg-white.png) !important;
@@ -132,14 +136,13 @@
     font-size: rem(15);
     font-weight: $bold;
     width: rem(320);
-    margin-top: rem(4);
-    padding: rem(17.5) 0;
+    height: rem(56);
     border-radius: rem(138.63);
     text-decoration: none;
     @include mq(md) {
         width: rem(626);
+        height: rem(110);
         margin-top: rem(7);
-        padding: rem(37.5) 0;
         font-size: rem(24);
     }
 }
@@ -205,14 +208,15 @@
     font-size: rem(16);
     font-weight: $bold;
     width: rem(280);
+    height: rem(49);
     margin-top: rem(4);
-    padding: rem(12.5) 0;
     border-radius: rem(138.63);
     text-decoration: none;
+    padding: 0;
     @include mq(md) {
         width: rem(379);
+        height: rem(66);
         margin-top: rem(7);
-        padding: rem(16.5) 0;
         font-size: rem(22.34);
     }
 }
@@ -225,16 +229,16 @@
 	content: "";
     position: absolute;
     top: 52%;
-    right: rem(20);
-    width: rem(17);
-	height: rem(17);
+    right: rem(30) !important;
+    width: rem(17) !important;
+	height: rem(17) !important;
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
     @include mq(md) {
-        top: 48%;
-        right: rem(30);
-        width: rem(23);
-        height: rem(23);
+        top: 45%;
+        right: rem(40)!important;
+        width: rem(21)!important;
+        height: rem(21)!important;
     }
 }
 
@@ -280,7 +284,7 @@
     background: $red;
     position: relative;
     color: $white;
-    font-size: rem(18.8);
+    font-size: rem(16);
     font-weight: $bold;
     width: rem(340);
     height: rem(77.87);
@@ -293,11 +297,8 @@
     @include mq(md) {
         width: rem(364);
         height: rem(83.4);
+        font-size: rem(18.8);
     }
-}
-
-.button__item span {
-    padding-right: rem(22);
 }
 
 .button__item span::after {
@@ -323,23 +324,23 @@
     width: rem(340);
     height: rem(77.87);
     background: $green;
-    font-size: rem(21.14);
+    font-size: rem(20);
     @include mq(md) {
         margin-top: rem(0);
         width: rem(364);
         height: rem(83.4);
+        font-size: rem(21.14);
     }
-}
-
-.button__item-green--detail span {
-    padding-right: rem(0);
 }
 
 .button__item-green--detail span::after {
 	background-image: url(../images/common/icon-bg-white.png);
-    right: rem(20);
+    right: rem(16);
     width: rem(24);
 	height: rem(24);
+    @include mq(md) {
+        right: rem(20);
+    }
 }
 
 
@@ -391,16 +392,12 @@
     }
 }
 
-.button__item-green--brand span {
-    padding-right: rem(0);
-}
-
 .button__item-green--brand span::after {
 	background-image: url(../images/common/icon-bg-green.png) !important;
     right: rem(14);
     width: rem(26);
 	height: rem(26);
-    top: 43%;
+    top: 46%;
     @include mq(md) {
         right: rem(20);
         width: rem(28);

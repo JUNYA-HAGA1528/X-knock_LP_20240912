@@ -79,3 +79,12 @@
     height: rem(123);
     margin: 0 auto;
 }
+
+
+.fv-pc__item--hover img {
+    transition: transform .6s ease; /* ゆっくり変化させる */
+}
+
+.fv-pc__item--hover:hover img {
+    transform: scale(1.1); /* 拡大 */
+}

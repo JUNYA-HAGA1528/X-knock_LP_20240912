@@ -52,7 +52,7 @@
     justify-content: center; /* 縦方向でも中央揃え */
     flex-grow: 1;
     @include mq(md) {
-        padding: rem(18) rem(22);
+        padding: rem(18) rem(23);
     }
 }
 
@@ -73,7 +73,6 @@
     font-size: rem(16);
     font-weight: $bold;
     line-height: calc(28/16);
-    letter-spacing: 0.02em;
     display: flex;
     justify-content: flex-start; /* テキストを左寄せ */
     text-align: left; /* テキスト自体も左寄せ */

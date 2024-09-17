@@ -32,8 +32,9 @@
 
 
 .detail-review__list{
-    margin-top: rem(60);
+    margin-top: rem(40);
     @include mq(md){
+        margin-top: rem(60);
         display: flex;
         flex-wrap: wrap;
     }
@@ -89,7 +90,7 @@
         background-image: url('../images/common/review-bg-test.png');
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
         background-size: cover;
-        padding: rem(80) rem(28) rem(68);
+        padding: rem(60) rem(28) rem(48);
     }
 }
 
@@ -103,7 +104,7 @@
         background-image: url('../images/common/review-bg-test.png');
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
         background-size: cover;
-        padding: rem(80) rem(40) rem(90);
+        padding: rem(60) rem(40);
     }
 }
 

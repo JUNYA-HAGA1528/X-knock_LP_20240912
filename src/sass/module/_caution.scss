@@ -47,6 +47,7 @@
 }
 
 .caution__title-sp-font{
+    margin-top: rem(10);
     font-size: rem(32);
     font-weight: $bold;
     letter-spacing: 0.01em;
@@ -80,9 +81,10 @@
 .caution__list{
     max-width: max-width;
     margin:rem(40) auto 0;
-    padding: 0 rem(25);
+    padding: 0 rem(10);
     @include mq(md) {
         max-width: rem(939);
+        padding: 0 rem(25);
     }
 }
 
@@ -105,4 +107,7 @@
 
 .caution__buttons{
     margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(47);
+    }
 }

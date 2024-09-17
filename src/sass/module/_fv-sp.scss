@@ -22,7 +22,7 @@
     background-size: contain;
     position: absolute;
     content: "";
-    top: -8px;
+    top: -12px;
     right: calc(50% - min(57.5%, rem(800)));
     width: rem(225);
     height: rem(141);
@@ -87,4 +87,14 @@
     margin-top: rem(63);
     font-size: rem(48);
     font-weight: $bold;
+}
+
+
+
+.fv-sp__item--hover img {
+    transition: transform .6s ease; /* ゆっくり変化させる */
+}
+
+.fv-sp__item--hover:hover img {
+    transform: scale(1.1); /* 拡大 */
 }

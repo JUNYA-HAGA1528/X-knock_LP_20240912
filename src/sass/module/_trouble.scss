@@ -1,8 +1,8 @@
 @use "global" as *;
 
+
 .trouble{
     text-align: center;
-    overflow: hidden;
 }
 
 .trouble__inner{
@@ -15,7 +15,7 @@
     font-size: rem(24);
     font-weight: $bold;
     letter-spacing: 0.01em;
-    margin-top: rem(40);
+    margin-top: rem(30);
     position: relative;
     display: inline-block;
     @include mq(md) {
@@ -41,14 +41,14 @@
 .trouble__title::before {
     left: -36.5%;
     @include mq(md) {
-        left: -44%;
+        left: -42%;
     }
 }
 
 .trouble__title::after {
     right: -36.5%;
     @include mq(md) {
-        right: -44%;
+        right: -42%;
     }
 }
 
@@ -94,6 +94,7 @@
     @include mq(md) {
         margin-top: rem(40);
         font-size: rem(13);
+        letter-spacing: 0.1em;
     }
 }
 

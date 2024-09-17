@@ -82,6 +82,18 @@
     opacity: 0.3;
 }
 
+.footer-card__list-margin{
+    margin-top: rem(2.5);
+}
+
+.footer-card__list-margin a:hover {
+    text-decoration: underline; /* リンクにホバーしたときの下線 */
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
 .footer-card__bottom {
     display: flex;
     margin-top: rem(10);

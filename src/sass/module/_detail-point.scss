@@ -30,7 +30,7 @@
     display: inline-block;
 
     @include mq(md) {
-        font-size: rem(36);
+        font-size: rem(40);
     }
 }
 
@@ -44,7 +44,7 @@
     height: rem(2);
     background-color: $green;
     @include mq(md) {
-        width: rem(244);
+        width: rem(218);
         top: 40%;
     }
 }
@@ -52,14 +52,14 @@
 .detail-point__title-pc::before {
     left: -89.5%;
     @include mq(md) {
-        left: -74%;
+        left: -63%;
     }
 }
 
 .detail-point__title-pc::after {
     right: -89.5%;
     @include mq(md) {
-        right: -74%;
+        right: -63%;
     }
 }
 
@@ -75,10 +75,12 @@
     font-size: rem(24);
     font-weight: $bold;
     letter-spacing: 0.01em;
-    margin-top: rem(40);
+    margin-top: rem(32);
     position: relative;
     display: inline-block;
-
+    @include mq(md) {
+        margin-top: rem(40);
+    }
 }
 
 
@@ -140,6 +142,15 @@
 .detail-green {
     background-color: #6daf5e;
     color: white;
+}
+
+.detail-green--reverse{
+    background-color: #ECE4CB;
+    color: #32562A;
+    @include mq(md) {
+        background-color: #6daf5e;
+        color: white;  
+    }
 }
 
 .detail-beige {

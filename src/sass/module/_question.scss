@@ -46,6 +46,10 @@
     font-size: rem(24);
     font-weight: $bold;
     letter-spacing: 0.01em;
+    padding-bottom: rem(10);
+    @include mq(md) {
+        padding-bottom: 0;
+    }
 }
 
 .question__title-sp-font{

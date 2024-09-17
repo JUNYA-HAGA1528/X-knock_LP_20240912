@@ -3,9 +3,9 @@
 .price__bg{
     font-weight: $bold;
     background-image: url('../images/common/price-bg-sp.png');
-    background-position: center calc(-27% + 50%);
+    background-position: calc(-27% + 72%) calc(-27% + 50%);
     background-repeat: no-repeat;
-    background-size: rem(848) rem(426);
+    background-size: rem(826) rem(420);
     padding-top: rem(120);
     @include mq(md) {
         background-image: url('../images/common/price-bg.png');
@@ -52,7 +52,7 @@
     margin-top: rem(40);
     font-size: rem(16);
     line-height: 2;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     @include mq(md) {
         font-size: rem(20);
         letter-spacing: 0.04em;

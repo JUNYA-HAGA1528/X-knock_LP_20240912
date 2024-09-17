@@ -2,7 +2,7 @@
 
 .top-trouble{
     margin-top: rem(93);
-    @media screen {
+    @include mq(md) {
         margin-top: rem(133);
     }
 }

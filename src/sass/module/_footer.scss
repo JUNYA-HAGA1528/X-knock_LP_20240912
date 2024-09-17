@@ -1,9 +1,8 @@
 @use "global" as *;
 
 .footer{
-    background-color: #5B9E4D;
+    background-color: $green;
     text-align: center;
-    margin-top: rem(300);
     padding: rem(80) 0 rem(100);
     @include mq(md) {
         padding: rem(100) 0 rem(120);
@@ -35,7 +34,7 @@
 .footer__title-pc{
     width: rem(500);
     margin: 0 auto;
-    padding: rem(5) 0;
+    padding: rem(8) 0 rem(2);
     border-top: solid 2px $white;
     border-bottom: solid 2px $white;
     font-size: rem(36);
@@ -72,7 +71,7 @@
     letter-spacing: 0.1em;
     line-height: 1.1;
     @include mq(md) {
-        margin-top: rem(0);
+        margin-top: rem(15);
         font-size: rem(42);
     }
 }

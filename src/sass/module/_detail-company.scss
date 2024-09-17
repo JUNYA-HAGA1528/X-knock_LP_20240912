@@ -63,14 +63,14 @@
 .detail-company__title::before {
     left: -125.5%;
     @include mq(md) {
-        left: -263%;
+        left: -268%;
     }
 }
 
 .detail-company__title::after {
     right: -125.5%;
     @include mq(md) {
-        right: -263%;
+        right: -268%;
     }
 }
 
@@ -169,10 +169,12 @@
 
     .detail-overview__table th {
         margin-top: rem(40);
+        font-size: rem(20);
     }
 
     .detail-overview__table td {
         padding-top: rem(20);
+        font-size: rem(16);
     }
 
     .detail-overview__table a {

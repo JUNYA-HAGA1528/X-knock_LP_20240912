@@ -6,8 +6,11 @@
     flex-direction: column;
     justify-content: space-between; /* コンテンツとボタンの間に空白を作る */
     background-color: $white;
-    padding: rem(37) 0 rem(40);
+    padding: rem(32) 0 rem(40);
     border-radius: rem(14.79);
+    @include mq(md) {
+        padding: rem(37) 0 rem(40);
+    }
 }
 
 .company-card__head{
@@ -16,7 +19,6 @@
     font-weight: $bold;
     letter-spacing: 0.01em;
     line-height: 1.55;
-    margin-left: rem(8);
     white-space: nowrap;
     @include mq(md) {
         font-size: rem(20);
@@ -38,7 +40,7 @@
 }
 
 .company-card__name{
-    color: $green;
+    color: #467A3A;
     font-size: rem(28);
     font-weight: $bold;
     letter-spacing: 0.01em;
@@ -179,7 +181,4 @@
         aspect-ratio: 310/228;
     }
 }
-
-
-
 

@@ -39,7 +39,7 @@
 .company__title-pc{
     width: rem(601);
     margin: 0 auto;
-    padding: rem(5) 0;
+    padding: rem(8) 0 rem(2);
     border-top: solid 2px $green;
     border-bottom: solid 2px $green;
     font-size: rem(36);
@@ -60,8 +60,9 @@
 
 .company__title-sp-bottom{
     margin-top: rem(10);
-    padding: rem(10) 0;
+    padding: rem(12) 0 rem(8);
     font-size: rem(24);
+    font-weight: $bold;
     letter-spacing: 0.04em;
     border-top: solid 2px $green;
     border-bottom: solid 2px $green;
@@ -77,7 +78,6 @@
     letter-spacing: 0.1em;
     line-height: 1.1;
     @include mq(md) {
-        margin-top: rem(10);
         font-size: rem(42);
     }
 }
@@ -120,7 +120,7 @@
     margin-top: rem(60);
     @include mq(md) {
         margin-top: rem(80);
-        padding: 0 rem(40);
+        padding: 0 3.4%;
     }
 }
 
