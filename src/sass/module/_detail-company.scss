@@ -10,7 +10,7 @@
     z-index: 10;
     @include mq(md) {
         background-image: url('../images/common/detail-company-bg.png');
-        background-position: calc(50% + -125px) calc(50% + 18px);
+        background-position: calc(50% + -120px) calc(50% + 18px);
         background-repeat: no-repeat;    
         background-size: rem(1320) rem(565);
         margin-top: rem(32);

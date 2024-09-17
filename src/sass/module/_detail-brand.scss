@@ -97,6 +97,18 @@
     }
 }
 
+.detail-brand__list--second{
+    @include mq(md) {
+        justify-content: center;
+    }
+}
+
+.detail-brand__list--third{
+    @include mq(md) {
+        max-width: rem(546);
+    }
+}
+
 .detail-brand__list p + p {
     margin-top: rem(4);
     @include mq(md) {

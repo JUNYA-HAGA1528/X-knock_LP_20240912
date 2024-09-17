@@ -110,6 +110,10 @@
     }
 }
 
+.detail__item + .detail__item{
+    margin-top: rem(100);
+}
+
 .detail__aside{
     width: 100%;
     @include mq(md){

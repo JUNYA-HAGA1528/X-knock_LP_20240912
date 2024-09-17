@@ -32,8 +32,8 @@
 
 
 .detail-review__list{
+    margin-top: rem(60);
     @include mq(md){
-        margin-top: rem(60);
         display: flex;
         flex-wrap: wrap;
     }
@@ -47,6 +47,13 @@
 }
 
 .detail-review__item + .detail-review__item{
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(80);
+    }
+}
+
+.detail-review__item--third + .detail-review__item--third{
     margin-top: rem(20);
     @include mq(md){
         margin-top: 0;
@@ -76,10 +83,27 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% rem(579);
-    padding: rem(80) rem(28) rem(68);
+    padding: rem(55) rem(28) rem(20);
+    border-radius: rem(16);
     @include mq(md) {
+        background-image: url('../images/common/review-bg-test.png');
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
         background-size: cover;
         padding: rem(80) rem(28) rem(68);
+    }
+}
+
+.detail-review__card--third{
+    background-image: url('../images/common/review-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% rem(477);
+    padding: rem(55) rem(28);
+    @include mq(md) {
+        background-image: url('../images/common/review-bg-test.png');
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+        background-size: cover;
+        padding: rem(80) rem(40) rem(90);
     }
 }
 
@@ -94,27 +118,31 @@
 }
 
 .detail-review__border{
-    margin-top: rem(40);
+    margin-top: rem(30);
     padding: 0 rem(10);
     @include mq(md) {
+        margin-top: rem(40);
         padding: 0;
     }
 }
 
 .detail-review__text{
     text-align: left;
-    margin-top: rem(40);
+    margin-top: rem(30);
     padding: 0 rem(30);
     font-size: rem(16);
     font-weight: $bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
     @include mq(md) {
+        margin-top: rem(40);
         padding: 0 ;
     }
 }
 
-
+.detail-review__text--third{
+    letter-spacing: 0.01em;
+}
 
 .detail-review__source{
     margin-top: rem(20);
@@ -123,9 +151,11 @@
     font-size: rem(10);
     font-weight: $medium;
     letter-spacing: 0.01em;
+    padding-bottom: rem(40);
     @include mq(md) {
         margin-top: rem(40);
         font-size: rem(13);
+        padding: 0;
     }
 }
 
