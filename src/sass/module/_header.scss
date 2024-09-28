@@ -2,39 +2,52 @@
 
 .header{
     text-align: center;
-    position: relative;
     max-width: rem(1440);
     margin: auto;
-}
-
-.header::before{
-    @include mq(md) {
-        background-image: url('../images/common/top-pattern-pc.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        content: "";
-        top: -100px;
-        right: calc(50% - min(48%, 48%));
-        width: rem(380);
-        height: rem(239);
-        z-index: -1;
-    }
 }
 
 .header__inner{
     padding: rem(25) rem(25) rem(0);
     @include mq(md) {
-        padding: rem(10) rem(40) 0;
+        padding: 0 rem(130) 0 rem(40);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
+.header__nav-pc{
+    background-color: #ECE4CB;
+    border-radius: 0 0 rem(16) rem(16);
+    padding: rem(30) rem(37) rem(22);
+}
+
 .header__logo{
+    padding-top: rem(10);
     width: rem(121);
     height: rem(45);
     @include mq(md) {
         width: rem(174);
         height: rem(65);
     }
+}
+
+.header__nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item{
+    padding: 0 rem(30);
+}
+
+.header__nav-item a {
+    color: #7A6A56;
+    font-size: rem(18);
+    font-weight: $bold;
+
+}
+
+.header__nav-item a:hover{
+    text-decoration: underline;
 }

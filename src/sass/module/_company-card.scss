@@ -8,8 +8,23 @@
     background-color: $white;
     padding: rem(32) 0 rem(40);
     border-radius: rem(14.79);
+    position: relative;
     @include mq(md) {
         padding: rem(37) 0 rem(40);
+    }
+}
+
+.company-card__comment{
+    position: absolute;
+    top: -3.7%;
+    right: 0;
+    width: rem(80);
+    height: rem(80);
+    z-index: 10;
+    @include mq(md) {
+        top: -5.7%;
+        width: rem(107);
+        height: rem(107);
     }
 }
 

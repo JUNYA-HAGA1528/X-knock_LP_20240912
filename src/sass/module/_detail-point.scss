@@ -131,12 +131,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* 要素を縦に並べる */
     width: rem(268);
     height: rem(132);
     border-radius: rem(16);
     font-size: rem(20);
     font-weight: $bold;
     box-shadow: 1px 6px 7px rgba(0, 0, 0, 0.2);
+    line-height: 1.75;
+}
+
+.detail-point__item span {
+    font-size: rem(10);
 }
 
 .detail-green {
