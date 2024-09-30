@@ -75,7 +75,7 @@
     font-weight: $bold;
     letter-spacing: 0.04em;
     @include mq(md) {
-        margin-top: rem(5);
+        margin-top: rem(8);
         font-size: rem(32);
     }
 }
