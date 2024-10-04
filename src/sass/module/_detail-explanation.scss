@@ -160,22 +160,6 @@
     height: rem(150);
 }
 
-.detail-explanation__wrapper--position{
-    position: relative;
-}
-
-.detail-explanation__flex-comment{
-    position: absolute;
-    top: 21%;
-    right: 2%;
-    width: rem(65);
-    height: rem(65);
-    z-index: 1000;
-    @include mq(md) {
-        width: rem(0);
-        height: rem(0);
-    }
-}
 
 .detail-explanation__img{
     width: 100%;
